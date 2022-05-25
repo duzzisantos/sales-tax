@@ -57,15 +57,6 @@ const chocolateBar = document.querySelector(".chocolateBar").value;
  const importedChocolate = document.querySelector(".imported-box-chocolate").value
  const importedPerfume = document.querySelector(".imported-perfume").value;
 
- //Basket Three
- const bottlePerfume = document.querySelector(".bottle-perfume").value
- const headachePills = document.querySelector(".pills").value
-
-
- //Variables for sales tax and total
- const salesTaxes = document.querySelector(".sales-taxes").value
- const total = document.querySelector(".total").value;
-
 const basketOne = () => {
    
 }
