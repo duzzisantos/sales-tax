@@ -22,7 +22,7 @@ const basketOne = () => {
 
   //this computes the total price paid by the customer
   let netPayment = +bookPlusTax + +musicCDPlusTax + +chocolateBarPlusTax;
-  document.getElementById("total").value = netPayment.toFixed(2);
+  let roundedPayment = netPayment.toFixed(2);
 
   //this computes the total sales tax generated
   let totalTaxes =
@@ -32,7 +32,10 @@ const basketOne = () => {
     (chocolateBarPlusTax - chocolateBar);
 
   //Math.ceil and toFixed method helps us round up to the nearest 0.05
-  document.getElementById("sales-taxes").value = (
-    Math.ceil(totalTaxes * 20) / 20
-  ).toFixed(2);
+  let roundedTax = (Math.ceil(totalTaxes * 20) / 20).toFixed(2);
+
+  //Receipt list
+  const listOne = document.getElementById("listOne");
+  listOne.innerHTML = `<br>1 book: ${bookPlusTax}<br>1 music CD: ${musicCDPlusTax.toFixed(2)}<br>1 
+  chocolate bar: ${chocolateBarPlusTax}<br>Sales Tax: ${roundedTax}<br><b>Total: ${roundedPayment}</b><br>`;
 };
