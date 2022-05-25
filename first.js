@@ -34,7 +34,7 @@ const basketOne = () => {
   //Math.ceil and toFixed method helps us round up to the nearest 0.05
   let roundedTax = (Math.ceil(totalTaxes * 20) / 20).toFixed(2);
 
-  //Receipt list
+  //Receipt
   const listOne = document.getElementById("listOne");
   listOne.innerHTML = `<br>1 book: ${bookPlusTax}<br>1 music CD: ${musicCDPlusTax.toFixed(2)}<br>1 
   chocolate bar: ${chocolateBarPlusTax}<br>Sales Tax: ${roundedTax}<br><b>Total: ${roundedPayment}</b><br>`;
