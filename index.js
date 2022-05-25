@@ -1,5 +1,4 @@
-//Variables for tax rate
-let taxFree = 0;
-let basicTax = 10;
-let importDuty = 5;
-let basicPlusImportDuty = basicTax + importDuty;
+//This is responsible for the DOM Manipulation 
+//This helps the user to display a simple receipt
+
+
