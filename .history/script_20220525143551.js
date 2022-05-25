@@ -1,0 +1,83 @@
+//Define product tax parameters as basic, imported and non-taxbale
+let products = [
+  {
+    id: 1,
+    productName: "book",
+    isBasicTaxable: false,
+    isImported: false,
+    isNonTaxable: true,
+  },
+  {
+    id: 2,
+    productName: "musicCD",
+    isBasicTaxable: true,
+    isImported: false,
+    isNonTaxable: false,
+  },
+  {
+    id: 3,
+    productName: "chocolateBar",
+    isBasicTaxable: true,
+    isImported: false,
+    isNonTaxable: false,
+  },
+  {
+    id: 4,
+    productName: "imported-box-chocolate",
+    isBasicTaxable: true,
+    isImported: true,
+    isNonTaxable: false,
+  },
+  {
+    id: 5,
+    productName: "imported-perfume",
+    isBasicTaxable: true,
+    isImported: true,
+    isNonTaxable: false,
+  },
+  {
+    id: 6,
+    productName: "bottle-perfume",
+    isBasicTaxable: true,
+    isImported: false,
+    isNonTaxable: false,
+  },
+];
+
+//All input variables declared
+
+//Basket One
+let book = document.querySelector(".book").value;
+let musicCD = document.querySelector(".musicCD").value;
+let chocolateBar = document.querySelector(".chocolateBar").value;
+
+//Basket Two
+let importedChocolate = document.querySelector(
+  ".imported-box-chocolate"
+).value;
+let importedPerfume = document.querySelector(".imported-perfume").value;
+
+//Basket Three
+let bottlePerfume = document.querySelector(".bottle-perfume").value;
+let headachePills = document.querySelector(".pills").value;
+
+//Variables for sales tax and total
+let salesTaxes = document.querySelector(".sales-taxes").value;
+let total = document.querySelector(".total").value;
+
+//Variables for tax rate
+let taxFree = 0;
+let basicTax = 10;
+let basicPlusImportTax = 15;
+
+let basketOne = () => {
+  let bookSalesTax = taxFree * book;
+  let musicCDTax = ((basicTax * musicCD) / 100).toFixed(2);
+  let chocolateBarTax = ((basicTax * chocolateBar) / 100).toFixed(2);
+  let totalTaxes = bookSalesTax + musicCDTax + chocolateBarTax;
+  salesTaxes = parseFloat(totalTaxes);
+  let salesValue = book + musicCD + chocolateBar;
+  let netPayment = salesValue - salesTaxes
+  document.querySelector(".total").value 
+  console.table(salesValue, salesTaxes, total);
+};

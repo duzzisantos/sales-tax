@@ -126,5 +126,5 @@ const basketThree = () => {
     (bottlePerfumePlusTax - bottlePerfume) +
     (pillsPlusTax - pills) +
     (importedChocolate2PlusTax - importedChocolate2);
-  document.getElementById("sales-taxes3").value = totalTaxes.toFixed(2);
+  document.getElementById("sales-taxes3").value = totalTaxes.toFixed(2.5);
 };

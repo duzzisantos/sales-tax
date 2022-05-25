@@ -83,48 +83,48 @@ const basketTwo = () => {
   let importedChocolate = document.getElementById(
     "imported-box-chocolate"
   ).value;
-  let importedPerfume2 = document.getElementById("imported-perfume").value;
+  let importedPerfume = document.getElementById("imported-perfume").value;
 
   let importedChocolatePlusTax =
     (importDuty * +importedChocolate) / 100 + +importedChocolate;
-  let importedPerfume2PlusTax =
-    (basicPlusImportDuty * +importedPerfume2) / 100 + +importedPerfume2;
+  let importedPerfumePlusTax =
+    (basicPlusImportDuty * +importedPerfume) / 100 + +importedPerfume;
   console.log(importedChocolatePlusTax);
-  console.log(importedPerfume2PlusTax);
+  console.log(importedPerfumePlusTax);
 
-  let netPayment = +importedChocolatePlusTax + +importedPerfume2PlusTax;
+  let netPayment = +importedChocolatePlusTax + +importedPerfumePlusTax;
   document.getElementById("total2").value = netPayment.toFixed(2);
   let totalTaxes =
     (importDuty * +importedChocolate) / 100 +
-    (basicPlusImportDuty * +importedPerfume2) / 100;
+    (basicPlusImportDuty * +importedPerfume) / 100;
   document.getElementById("sales-taxes2").value = totalTaxes.toFixed(2);
 };
 
 const basketThree = () => {
-  let importedPerfume2 = document.getElementById("imported-perfume2").value;
+  let importedPerfume = document.getElementById("imported-perfume").value;
   let bottlePerfume = document.getElementById("bottle-perfume").value;
   let pills = document.getElementById("pills").value;
-  let importedChocolate2 = document.getElementById("imported-box-chocolate2").value;
+  let importedBoxChoc = document.getElementById("imported-box-chocolate").value;
 
-  let importedPerfume2PlusTax =
-    (basicPlusImportDuty * +importedPerfume2) / 100 + +importedPerfume2;
+  let importedPerfumePlusTax =
+    (basicPlusImportDuty * +importedPerfume) / 100 + +importedPerfume;
   let bottlePerfumePlusTax =
-    (basicTax * +bottlePerfume) / 100 + +bottlePerfume;
-  let pillsPlusTax = (taxFree * +pills) + +pills;
-  let importedChocolate2PlusTax =
-    (importDuty * +importedChocolate2) / 100 + +importedChocolate2;
+    (basicPlusImportDuty * +bottlePerfume) / 100 + +bottlePerfume;
+  let pillsPlusTax = taxFree * +pills + +pills;
+  let importedBoxChocPlusTax =
+    (importDuty * +importedBoxChoc) / 100 + +importedBoxChoc;
 
   let netPayment =
-    importedPerfume2PlusTax +
+    importedPerfumePlusTax +
     bottlePerfumePlusTax +
     pillsPlusTax +
-    importedChocolate2PlusTax;
-  document.getElementById("total3").value = netPayment.toFixed(2);
+    importedBoxChocPlusTax;
+  document.getElementById("total3").value = netPayment;
   let totalTaxes =
-    importedPerfume2PlusTax -
-    importedPerfume2 +
+    importedPerfumePlusTax -
+    importedPerfume +
     (bottlePerfumePlusTax - bottlePerfume) +
     (pillsPlusTax - pills) +
-    (importedChocolate2PlusTax - importedChocolate2);
-  document.getElementById("sales-taxes3").value = totalTaxes.toFixed(2);
+    (importedBoxChocPlusTax - importedBoxChoc);
+    document.getElementById("sales-taxes3").value = totalTaxes
 };

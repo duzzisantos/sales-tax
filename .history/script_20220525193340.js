@@ -119,7 +119,7 @@ const basketThree = () => {
     bottlePerfumePlusTax +
     pillsPlusTax +
     importedChocolate2PlusTax;
-  document.getElementById("total3").value = netPayment.toFixed(2);
+  document.getElementById("total3").value = Math.round(netPayment.toFixed(3));
   let totalTaxes =
     importedPerfume2PlusTax -
     importedPerfume2 +

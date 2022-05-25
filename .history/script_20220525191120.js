@@ -109,8 +109,8 @@ const basketThree = () => {
   let importedPerfume2PlusTax =
     (basicPlusImportDuty * +importedPerfume2) / 100 + +importedPerfume2;
   let bottlePerfumePlusTax =
-    (basicTax * +bottlePerfume) / 100 + +bottlePerfume;
-  let pillsPlusTax = (taxFree * +pills) + +pills;
+    (basicPlusImportDuty * +bottlePerfume) / 100 + +bottlePerfume;
+  let pillsPlusTax = taxFree * +pills + +pills;
   let importedChocolate2PlusTax =
     (importDuty * +importedChocolate2) / 100 + +importedChocolate2;
 
