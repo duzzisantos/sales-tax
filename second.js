@@ -30,5 +30,7 @@ const basketTwo = () => {
     let totalTaxes =
       (importDuty2 * +importedChocolate) / 100 +
       (basicPlusImportDuty2 * +importedPerfume2) / 100;
-    document.getElementById("sales-taxes2").value = totalTaxes.toFixed(2);
+
+     //Math.ceil and toFixed method helps us round up to the nearest 0.05
+    document.getElementById("sales-taxes2").value = (Math.ceil(totalTaxes * 20) / 20).toFixed(2);
   };

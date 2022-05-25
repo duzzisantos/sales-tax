@@ -39,6 +39,10 @@ const basketThree = () => {
       (bottlePerfumePlusTax - bottlePerfume) +
       (pillsPlusTax - pills) +
       (importedChocolate2PlusTax - importedChocolate2);
-    document.getElementById("sales-taxes3").value = totalTaxes.toFixed(2);
+
+    //Math.ceil and toFixed method helps us round up to the nearest 0.05
+    document.getElementById("sales-taxes3").value = (
+        Math.ceil(totalTaxes * 20) / 20
+      ).toFixed(2);
   };
   
