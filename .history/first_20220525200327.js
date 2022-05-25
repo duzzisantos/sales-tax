@@ -23,8 +23,6 @@ const basketOne = () => {
   //this computes the total price paid by the customer
   let netPayment = +bookPlusTax + +musicCDPlusTax + +chocolateBarPlusTax;
   document.getElementById("total").value = netPayment.toFixed(2);
-
-  //this computes the total sales tax generated
   let totalTaxes =
  ( bookPlusTax - book) + (musicCDPlusTax - musicCD) + (chocolateBarPlusTax - chocolateBar);
   document.getElementById("sales-taxes").value = totalTaxes.toFixed(2);
