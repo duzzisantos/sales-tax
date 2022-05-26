@@ -47,7 +47,7 @@ This application calculates sales tax for three baskets of goods.
  # Other langauges
   - CSS
   - HTML
-# JavaScript Version of the application
+# Javascript Version of the application
   ## Content
   - HTML inputs are used to collect integer values, so that when the input listens to an event - onChange, and the document.getElementById method is called, we can extract the values from the input elements.
   - Each input element with its value is declared as a variable, so that when math operations like  /, +, * or - are perfomed, the user can see the results displayed on the receipt area.
