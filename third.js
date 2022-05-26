@@ -19,35 +19,41 @@ const basketThree = () => {
   //these are the sums of the imported items and their taxes
   let importedPerfume2PlusTax =
     (basicPlusImportDuty3 * +importedPerfume2) / 100 + +importedPerfume2;
+  let roundedImportedPerf2 = importedPerfume2PlusTax.toFixed(2);
   let bottlePerfumePlusTax =
     (basicTax3 * +bottlePerfume) / 100 + +bottlePerfume;
+  let roundedBottlePerf = bottlePerfumePlusTax.toFixed(2);
   let pillsPlusTax = taxFree3 * +pills + +pills;
   let importedChocolate2PlusTax =
     (importDuty3 * +importedChocolate2) / 100 + +importedChocolate2;
+  let roundedImportedChoc = (
+    Math.ceil(importedChocolate2PlusTax * 20) / 20
+  ).toFixed(2);
 
   //Math.ceil and toFixed method helps us round up to the nearest 0.05
   //This computes the prices plus their taxes
-  let netPayment =
-    importedPerfume2PlusTax +
-    bottlePerfumePlusTax +
-    pillsPlusTax +
-    importedChocolate2PlusTax;
-  let roundedPayment = (Math.ceil(netPayment * 20) / 20).toFixed(2);
+
+  let everyThing =
+    +roundedImportedPerf2 +
+    +roundedBottlePerf +
+    +pillsPlusTax +
+    +roundedImportedChoc;
+  let roundedPayment = everyThing.toFixed(2);
 
   //this computes the total taxes generated from selling basket three
   let totalTaxes =
-    importedPerfume2PlusTax -
-    importedPerfume2 +
-    (bottlePerfumePlusTax - bottlePerfume) +
-    (pillsPlusTax - pills) +
-    (importedChocolate2PlusTax - importedChocolate2);
+    +importedPerfume2PlusTax -
+    +importedPerfume2 +
+    (+bottlePerfumePlusTax - +bottlePerfume) +
+    (+pillsPlusTax - +pills) +
+    (+importedChocolate2PlusTax - +importedChocolate2);
 
   let roundedTaxes = (Math.ceil(totalTaxes * 20) / 20).toFixed(2);
 
   //Receipt
   const listThree = document.getElementById("listThree");
-  listThree.innerHTML = `<br>1 imported bottle of perfume: ${importedPerfume2PlusTax.toFixed(2)}
-  <br>1 bottle of perfume: ${bottlePerfumePlusTax.toFixed(2)}<br>1 packet of headache pills: ${pillsPlusTax.toFixed(2)}
-  <br>1 imported box of chocolate: ${importedChocolate2PlusTax.toFixed(2)}
+  listThree.innerHTML = `<br>1 imported bottle of perfume: ${roundedImportedPerf2}
+  <br>1 bottle of perfume: ${roundedBottlePerf}<br>1 packet of headache pills: ${pillsPlusTax}
+  <br>1 imported box of chocolate: ${roundedImportedChoc}
   <br>Sales Tax: ${roundedTaxes}<br><b>Total: ${roundedPayment}</b><br>`;
 };
