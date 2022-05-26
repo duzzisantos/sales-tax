@@ -56,6 +56,7 @@ This application calculates sales tax for three baskets of goods.
   - For every tax calculation, the program multiplies the tax rate by the product price all over 100: that is tax contribution = (tax rate * product price) / 100. Add this to the original price, and we have the gross price.
   - The total sales tax calculates all the individual sales taxes
   - The total price is the sum of all the the individual gross prices per item in the goods basket. 
+Demo found here: https://sales-taxes.netlify.app/
 
 
 # Python version of the application
