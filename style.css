@@ -54,3 +54,12 @@ input{
     border-radius: 5px;
     border: 1px solid rgb(185, 185, 185);
 }
+
+#listOne, #listTwo, #listThree{
+    height: fit-content;
+    width: 90%;
+    margin-left: 3%;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-top: -15px;
+}
