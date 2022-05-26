@@ -1,5 +1,6 @@
 #Define tax rates
 
+## This was used as a guide to the rules of the application
 taxRates = {
     "basicTax": 10,
     "importDuty": 5,
