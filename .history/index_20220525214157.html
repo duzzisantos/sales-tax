@@ -16,43 +16,46 @@
             <legend>
                 <h4>Basket One</h4>
             </legend>
-            <form class="formOne">
-                <label for="book">Book</label>
-                <input id="book" type="number" name="book" onchange="basketOne()" />
-                <label for="musicCD">Music CD</label>
-                <input id="musicCD" type="number" name="musicCD" onchange="basketOne()" />
-                <label for="chocolateBar">Chocolate Bar</label>
-                <input id="chocolateBar" type="number" name="chocolateBar" onchange="basketOne()" />
-            </form>
-            <h5>My receipt</h5>
-            <span id="listOne">
-
-                </>
+            <label for="book">Book</label>
+            <input id="book" type="number" name="book" onchange="basketOne()" />
+            <label for="musicCD">Music CD</label>
+            <input id="musicCD" type="number" name="musicCD" onchange="basketOne()" />
+            <label for="chocolateBar">Chocolate Bar</label>
+            <input id="chocolateBar" type="number" name="chocolateBar" onchange="basketOne()" />
+            <label for="sales-taxes">Sales Taxes</label>
+            <input id="sales-taxes" type="number" name="sales-taxes" onchange="basketOne()" disabled />
+            <label for="total">Total</label>
+            <input id="total" type="number" name="total" onchange="basketOne()" disabled />
+            <ul class="listOne">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </fieldset>
         <hr>
-
+        
         <fieldset>
             <legend>
                 <h4>Basket Two</h4>
             </legend>
-
             <label for="imported-box-chocolate">Imported Box of Chocolates</label>
             <input id="imported-box-chocolate" type="number" name="imported-box-chocolate" onchange="basketTwo()" />
             <label for="imported-perfume">Imported Bottle of Perfume</label>
             <input id="imported-perfume" type="number" name="imported-perfume" onchange="basketTwo()" />
 
-            <h5>My receipt</h5>
-            <span id="listTwo">
-
-            </span>
+            <label for="sales-taxes2">Sales Taxes</label>
+            <input id="sales-taxes2" type="number" name="sales-taxes2" onchange="basketTwo()" />
+            <label for="total">Total</label>
+            <input disabled id="total2" type="number" name="total2" onchange="basketTwo()" />
         </fieldset>
         <hr>
-
+        
         <fieldset>
             <legend>
                 <h4>Basket Three</h4>
             </legend>
-
             <label for="imported-perfume2">Imported Bottle of Perfume</label>
             <input id="imported-perfume2" type="number" name="imported-perfume2" onchange="basketThree()" />
             <label for="bottle-perfume">Bottle of Perfume</label>
@@ -61,17 +64,15 @@
             <input id="pills" type="number" name="pills" onchange="basketThree()" />
             <label for="imported-box-chocolate2">Imported Box of Chocolates</label>
             <input id="imported-box-chocolate2" type="number" name="imported-box-chocolate2" onchange="basketThree()" />
-
-            <h5>My receipt</h5>
-            <span id="listThree">
-
-            </span>
+            <label for=" sales-taxes3">Sales Taxes</label>
+            <input id="sales-taxes3" type="number" name="sales-taxes3" onchange="basketThree()" />
+            <label for="total3">Total</label>
+            <input disabled id="total3" type="number" name="total3" onchange="basketThree()" />
         </fieldset>
     </section>
 </body>
 <script src="first.js"></script>
 <script src="second.js"></script>
 <script src="third.js"></script>
-<script src="index.js"></script>
 
 </html>

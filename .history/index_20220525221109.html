@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Sales Tax Calculator</title>
+</head>
+
+<body>
+    <h1>Sales Tax Calculator</h1>
+    <section id="container">
+        <fieldset>
+            <legend>
+                <h4>Basket One</h4>
+            </legend>
+            <form class="formOne">
+                <label for="book">Book</label>
+                <input id="book" type="number" name="book" onchange="basketOne()" />
+                <label for="musicCD">Music CD</label>
+                <input id="musicCD" type="number" name="musicCD" onchange="basketOne()" />
+                <label for="chocolateBar">Chocolate Bar</label>
+                <input id="chocolateBar" type="number" name="chocolateBar" onchange="basketOne()" />
+                <label for="sales-taxes">Sales Taxes</label>
+                <input id="sales-taxes" type="number" name="sales-taxes" onchange="basketOne()" disabled />
+                <label for="total">Total</label>
+                <input id="total" type="number" name="total" onchange="basketOne()" disabled />
+            </form>
+            <h5>My receipt</h5>
+            <ul id="listOne">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>
+                <h4>Basket Two</h4>
+            </legend>
+            <form class="formTwo">
+                <label for="imported-box-chocolate">Imported Box of Chocolates</label>
+                <input id="imported-box-chocolate" type="number" name="imported-box-chocolate" onchange="basketTwo()" />
+                <label for="imported-perfume">Imported Bottle of Perfume</label>
+                <input id="imported-perfume" type="number" name="imported-perfume" onchange="basketTwo()" />
+
+                <label for="sales-taxes2">Sales Taxes</label>
+                <input id="sales-taxes2" type="number" name="sales-taxes2" onchange="basketTwo()" disabled />
+                <label for="total">Total</label>
+                <input disabled id="total2" type="number" name="total2" onchange="basketTwo()" />
+            </form>
+
+            <h5>My receipt</h5>
+            <span id="listTwo">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </span>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>
+                <h4>Basket Three</h4>
+            </legend>
+            <form class="formThree">
+                <label for="imported-perfume2">Imported Bottle of Perfume</label>
+                <input id="imported-perfume2" type="number" name="imported-perfume2" onchange="basketThree()" />
+                <label for="bottle-perfume">Bottle of Perfume</label>
+                <input id="bottle-perfume" type="number" name="bottle-perfume" onchange="basketThree()" />
+                <label for="pills">Headache Pills</label>
+                <input id="pills" type="number" name="pills" onchange="basketThree()" />
+                <label for="imported-box-chocolate2">Imported Box of Chocolates</label>
+                <input id="imported-box-chocolate2" type="number" name="imported-box-chocolate2"
+                    onchange="basketThree()" />
+                <label for=" sales-taxes3">Sales Taxes</label>
+                <input id="sales-taxes3" type="number" name="sales-taxes3" onchange="basketThree()" disabled />
+                <label for="total3">Total</label>
+                <input disabled id="total3" type="number" name="total3" onchange="basketThree()" />
+            </form>
+
+            <h5>My receipt</h5>
+            <ul id="listThree">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </fieldset>
+    </section>
+</body>
+<script src="first.js"></script>
+<script src="second.js"></script>
+<script src="third.js"></script>
+<script src="index.js"></script>
+
+</html>
