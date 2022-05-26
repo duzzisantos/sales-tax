@@ -1,6 +1,6 @@
 #Define tax rates
 
-## This was used as a guide to the rules of the application
+## This was used as a guide to the rules of the application. It contains the price, product name and product categories
 taxRates = {
     "basicTax": 10,
     "importDuty": 5,
