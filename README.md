@@ -49,10 +49,19 @@ This application calculates sales tax for three baskets of goods.
   - HTML
 # JavaScript Version of the application
   ## Content
-  - HTML inputs are used to collect integer values, so that when the document.getElementById method is called, we can extract the values from the input elements.
-  - Each input element with its value is declared as a variable, so that when math operations like  /, +, * or - perfomed, the user can see the results displayed on the receipt area.
+  - HTML inputs are used to collect integer values, so that when the input listens to an event - onChange, and the document.getElementById method is called, we can extract the values from the input elements.
+  - Each input element with its value is declared as a variable, so that when math operations like  /, +, * or - are perfomed, the user can see the results displayed on the receipt area.
   - Tax plus original price is rounded to the nearest 0.05 using the Math.ceil() method and the toFixed() method. In this case, toFixed(2), to round to two decimal places. 
   - Performing any calculation requires that the variables for the various tax conditions are stated( basic tax = 10%, import duty = 5%, basic tax + import duty = 15%, no tax = 0).
   - For every tax calculation, the program multiplies the tax rate by the product price all over 100: that is tax contribution = (tax rate * product price) / 100. Add this to the original price, and we have the gross price.
   - The total sales tax calculates all the individual sales taxes
-  - The total price is the sum of all the the indicidual gross prices per item in the goods basket. 
+  - The total price is the sum of all the the individual gross prices per item in the goods basket. 
+
+
+# Python version of the application
+  ## Content
+  - This utilises python input functions that are supposed to print product item and price text in the output.
+  - The tax rates are declared as variables, and the different products with the prices are declared as variables.
+  - Math operations are performed within individual application functions by using the necessary tax and product price variables, considering the tax conditions earlier stated.
+  - We use the format() and math.ciel() methods to round up the numbers to their nearest 0.05. To acheive this, we must pass ".2f" as an argument in the format() method. It is also important to cast the formatted data as a float type, for easier calculation, and avoidance of errors.
+  - Each result is printed sequentally, based on the order of their input, and thus, we have a receipt.
