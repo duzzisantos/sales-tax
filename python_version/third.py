@@ -16,47 +16,48 @@ noTax = 0
 
 
 def basketThree():
-    #input and output logic
+    #input and output logic - For all items, we calculate the tax and round them up to the nearest 0.05
     # first item
-    input("1 imported bottle of perfume at 27.99: ")
+
+    # User must enter the pre-determined prices on input
+    input("1 imported bottle of perfume at 27.99")
     importedBottleOfPerfume2PlusTax = (
         (basicPlusImport * importedBottleOfPerfume2) /
         100) + importedBottleOfPerfume2
-    roundedImportedPerfume2 = format(importedBottleOfPerfume2PlusTax, ".2f")
+    roundedImportedPerfume2 = float(
+        format(importedBottleOfPerfume2PlusTax, ".2f"))
 
     # second item
-    input("1 bottle of perfume at 18.99: ")
+    input("1 bottle of perfume at 18.99")
     bottleOfPerfumePlusTax = (
         (basicTax * bottleOfPerfume) / 100) + bottleOfPerfume
-    roundedBottlePerfume = format(bottleOfPerfumePlusTax, ".2f")
+    roundedBottlePerfume = float(format(bottleOfPerfumePlusTax, ".2f"))
 
-    # third item
-    input("1 packet of headache pills at 9.75: ")
+    # third item      #no roundup needed
+    input("1 packet of headache pills at 9.75")
     packetOfHeadachePillsPlusTax = (
         (noTax * packetOfHeadachePills) / 100) + packetOfHeadachePills
 
     # fourth item
-    input("1 box of imported chocolates at 11.25: ")
+    input("1 box of imported chocolates at 11.25")
     importedBoxOfChocolates2PlusTax = (
         (importDuty * importedBoxOfChocolates2) /
         100) + importedBoxOfChocolates2
-    roundedImportedChoc = format(
-        (math.ceil(importedBoxOfChocolates2PlusTax * 20) / 20), ".2f")
+    roundedImportedChoc = float(
+        format((math.ceil(importedBoxOfChocolates2PlusTax * 20) / 20), ".2f"))
 
     # Total taxes rounded up to the nearest 0.05
-
     salesTaxes3 = (
         (importedBottleOfPerfume2PlusTax - importedBottleOfPerfume2) +
         (bottleOfPerfumePlusTax - bottleOfPerfume) +
         (packetOfHeadachePillsPlusTax - packetOfHeadachePills) +
         (importedBoxOfChocolates2PlusTax - importedBoxOfChocolates2))
 
-    salesTaxRounded3 = format((math.ceil(salesTaxes3 * 20) / 20), ".2f")
+    salesTaxRounded3 = float(format((math.ceil(salesTaxes3 * 20) / 20), ".2f"))
 
     # Total payment rounded up to the nearest 0.05
-
-    totalPayment3 = importedBottleOfPerfume2PlusTax + bottleOfPerfumePlusTax + packetOfHeadachePillsPlusTax + importedBoxOfChocolates2PlusTax
-    paymentRounded3 = format((math.ceil(totalPayment3 * 20) / 20), ".2f")
+    totalPayment3 = roundedImportedPerfume2 + roundedBottlePerfume + packetOfHeadachePillsPlusTax + roundedImportedChoc
+    paymentRounded3 = float(format((totalPayment3 * 20 / 20), ".2f"))
 
     # Print receipt
 
