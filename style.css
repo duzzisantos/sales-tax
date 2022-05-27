@@ -1,6 +1,6 @@
 *{
     color: rgb(0,0,0,0.8);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container{
@@ -12,7 +12,7 @@
 }
 
 fieldset{
-    height: fit-content;
+    height: 600px;
     width: 20%;
     border: 1px solid rgb(185, 185, 185);
     border-radius: 15px;
@@ -23,20 +23,21 @@ fieldset{
 legend{
     height: 70px;
     width: 70px;
-    border: 1px solid transparent;
-    background-color: orange;
+    border: 3px solid white;
+    background-color: #A71D31;
     border-radius: 50px;
     margin-left: 38%;
 }
 
 h1{
     text-align: center;
-    color: rgb(248, 93, 37);
+    color: #A71D31;
 }
 
-h4{
+h6{
     text-align: center;
     color: whitesmoke;
+    font-size: 12px;
 }
 
 h5{
@@ -59,7 +60,7 @@ input{
     height: fit-content;
     width: 90%;
     margin-left: 3%;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     padding: 10px;
     margin-top: -15px;
 }
