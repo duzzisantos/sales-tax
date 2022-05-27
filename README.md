@@ -66,3 +66,9 @@ Demo found here: https://sales-taxes.netlify.app/
   - Math operations are performed within individual application functions by using the necessary tax and product price variables, considering the tax conditions earlier stated.
   - We use the format() and math.ciel() methods to round up the numbers to their nearest 0.05. To acheive this, we must pass ".2f" as an argument in the format() method. It is also important to cast the formatted data as a float type, for easier calculation, and avoidance of errors.
   - Each result is printed sequentally, based on the order of their input, and thus, we have a receipt.
+
+# Testing
+
+Testing was carried out Jest, because it is intuitive and great in validating declarations and expressions, as well as validating arguments.
+The 15 tests carried all passed OK. The tests vigorously tested the equations we solved in the application to make sure that there is consistency in the
+Math() and toFixed() methods used, as well as validating numbers as floats or whole numbers rather than strings.
