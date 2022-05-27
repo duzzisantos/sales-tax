@@ -37,5 +37,5 @@ const basketOne = () => {
   //Receipt
   const listOne = document.getElementById("listOne");
   listOne.innerHTML = `<br>1 book: ${bookPlusTax}<br>1 music CD: ${musicCDPlusTax.toFixed(2)}<br>1 
-  chocolate bar: ${chocolateBarPlusTax}<br>Sales Tax: ${roundedTax}<br><b>Total: ${roundedPayment}</b><br>`;
+  chocolate bar: ${chocolateBarPlusTax}<br>Sales Taxes: ${roundedTax}<br><b>Total: ${roundedPayment}</b><br>`;
 };
