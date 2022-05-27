@@ -55,5 +55,5 @@ const basketThree = () => {
   listThree.innerHTML = `<br>1 imported bottle of perfume: ${roundedImportedPerf2}
   <br>1 bottle of perfume: ${roundedBottlePerf}<br>1 packet of headache pills: ${pillsPlusTax}
   <br>1 imported box of chocolate: ${roundedImportedChoc}
-  <br>Sales Tax: ${roundedTaxes}<br><b>Total: ${roundedPayment}</b><br>`;
+  <br>Sales Taxes: ${roundedTaxes}<br><b>Total: ${roundedPayment}</b><br>`;
 };
