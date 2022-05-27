@@ -69,6 +69,6 @@ Demo found here: https://sales-taxes.netlify.app/
 
 # Testing
 
-Testing was carried out Jest, because it is intuitive and great in validating declarations and expressions, as well as validating arguments.
+Testing was carried out using a library Jest.JS - downloadable via npm, because it is intuitive and great in validating declarations and expressions, as well as validating arguments.
 The 15 tests carried all passed OK. The tests vigorously tested the equations we solved in the application to make sure that there is consistency in the
 Math() and toFixed() methods used, as well as validating numbers as floats or whole numbers rather than strings.
