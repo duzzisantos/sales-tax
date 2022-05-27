@@ -23,7 +23,7 @@ fieldset{
 legend{
     height: 70px;
     width: 70px;
-    border: 1px solid transparent;
+    border: 2px solid white;
     background-color: orange;
     border-radius: 50px;
     margin-left: 38%;
