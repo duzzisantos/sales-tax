@@ -1,0 +1,26 @@
+{
+  "name": "itemis",
+  "version": "1.0.0",
+  "description": "This application calculates sales tax for three baskets of goods.",
+  "main": "first.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duzzisantos/sales-tax.git"
+  },
+  "keywords": [
+    "javascript",
+    "python"
+  ],
+  "author": "Duzie Uche-Abba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duzzisantos/sales-tax/issues"
+  },
+  "homepage": "https://github.com/duzzisantos/sales-tax#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
