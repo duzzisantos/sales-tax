@@ -23,8 +23,8 @@ const basketTwo = () => {
 
   //Math.ceil and toFixed method helps us round up to the nearest 0.05
   //this computes the total price paid by the customer
-  let netPayment = +importedChocolatePlusTax + +importedPerfumePlusTax;
-  let roundedPayment = (Math.ceil(netPayment * 20) / 20).toFixed(2);
+  let totalPayment = +importedChocolatePlusTax + +importedPerfumePlusTax;
+  let roundedPayment = (Math.ceil(totalPayment * 20) / 20).toFixed(2);
 
   //this computes the total sales tax generated
   let totalTaxes =
