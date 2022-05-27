@@ -23,15 +23,15 @@ fieldset{
 legend{
     height: 70px;
     width: 70px;
-    border: 2px solid white;
-    background-color: orange;
+    border: 3px solid white;
+    background-color: #A71D31;
     border-radius: 50px;
     margin-left: 38%;
 }
 
 h1{
     text-align: center;
-    color: rgb(248, 93, 37);
+    color: #A71D31;
 }
 
 h4{
@@ -59,7 +59,7 @@ input{
     height: fit-content;
     width: 90%;
     margin-left: 3%;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     padding: 10px;
     margin-top: -15px;
 }
