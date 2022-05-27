@@ -1,0 +1,26 @@
+{
+  "name": "javascript_version",
+  "version": "1.0.0",
+  "description": "sales tax app",
+  "main": "first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duzzisantos/sales-tax.git"
+  },
+  "keywords": [
+    "sales",
+    "tax"
+  ],
+  "author": "Duzie Uche-Abba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/duzzisantos/sales-tax/issues"
+  },
+  "homepage": "https://github.com/duzzisantos/sales-tax#readme",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
