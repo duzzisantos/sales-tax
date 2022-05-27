@@ -21,8 +21,8 @@ const basketOne = () => {
   let chocolateBarPlusTax = +taxFree * +chocolateBar + +chocolateBar;
 
   //this computes the total price paid by the customer
-  let netPayment = +bookPlusTax + +musicCDPlusTax + +chocolateBarPlusTax;
-  let roundedPayment = netPayment.toFixed(2);
+  let totalPayment = +bookPlusTax + +musicCDPlusTax + +chocolateBarPlusTax;
+  let roundedPayment = totalPayment.toFixed(2);
 
   //this computes the total sales tax generated
   let totalTaxes =
